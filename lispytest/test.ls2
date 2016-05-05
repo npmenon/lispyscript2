@@ -149,4 +149,30 @@
 (var z 10)
 (cond (< z 0) ((console.log "Failed test 19")) (null? z) ((console.log "Failed test 19")) (> z 0) ((console.log "Passed test 19")) true ((console.log "Failed test 19")))
 
+(print "==================================")
+
+;;;;;;;;;;;;;;;;;;;;;;Test 20;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Function to square a number
+
+(var square
+  (function square(n)
+    (* n n)))
+(if (= (square 10) 100) ((console.log "Passed test 20")) ((console.log "Failed test 20")))
+
+(print "==================================")
+
+;;;;;;;;;;;;;;;;;;;;;;Test 21;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Checking not equal to condition
+
+(if (!= 1 2)
+  ((console.log "Passed test 21")) ((console.log "Failed test 21")))
+
+(print "==================================")
+
+;;;;;;;;;;;;;;;;;;;;;;Test 22;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Checking not equal to condition
+
+(if (!true)
+  ((console.log "Failed test 22")) ((console.log "Passed test 22")))
+
 (print "=====================All Test Cases Successfully Passed=============================")
